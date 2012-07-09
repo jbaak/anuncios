@@ -1,0 +1,78 @@
+body{
+
+	color:#000;
+	font-size:12px;
+	line-height:150%;
+	font-family:"Lucida Grande",Lucida,Verdana,sans-serif;
+	text-align:center;
+	margin: 0;
+	padding: 0;
+
+}
+.wrap {
+	max-width:80%;
+	margin:0 auto;
+}	
+
+header {
+	display:inline-block;
+	padding-top:10px;
+	width:100%;
+	/*height:120px;*/
+	background-color:	#1E90FF;
+	margin-bottom:20px;
+	/*background: url(images/cat.png) repeat-x;
+	 sombra */
+	-webkit-box-shadow: 1px 2px 10px #292929;
+	-moz-box-shadow: 1px 2px 10px #292929;
+	box-shadow: 1px 2px 10px #292929;
+}
+
+#logo{
+	width:25%;
+	float:left;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#logo a {
+	font-family: serif; 
+	text-decoration:none;
+	color: white;
+	font-size: 50px;
+	text-shadow: 
+	1px 1px 0px rgba(230,230,230,1), 
+	2px 2px 0px rgba(200,200,200,1), 
+	3px 3px 0px rgba(180,180,180,1), 
+	4px 4px 0px rgba(160,160,160,1), 
+	/*Añadimos*/ 
+	5px 5px 0px rgba(0,0,0,1), 
+	8px 8px 20px rgba(0,0,0,0.5);
+	
+}
+
+nav{
+	padding-top:20px;
+	float:left;
+	width:75%;
+	
+}
+
+nav ul {
+	padding:0;
+	font-size:0;
+}
+
+nav ul li {
+	box-sizing:border-box;
+	display:inline-block;
+	font-size:16px;
+	padding:10px;
+	width:15%;
+	vertical-align:top;
+
+}
+
+
+
+

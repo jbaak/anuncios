@@ -1,0 +1,19 @@
+@media (max-width:480px),(max-device-width:480px)
+{
+	#logo{
+		background-color: black;
+		width:40%;
+	}
+
+	#logo a{
+		font-size: 20px;
+	}
+
+	nav {
+		width:60%;
+	}
+
+	nav ul li{
+		width: 40%;
+	}
+}
