@@ -35,17 +35,28 @@
 					<?php $search_text = "Que estas buscando?"; ?>
 					<form method="pos" id="buscador" action="">
                       <input type="text" value="<?php echo $search_text; ?>" name="s" id="s" onblur="if (this.value == '') {this.value = '<?php echo $search_text; ?>';}" onfocus="if (this.value == '<?php echo $search_text; ?>') {this.value = '';}" />
-                      <input type="submit" id="searchsubmit" value="Buscar" />
+
+                      <select id="categorias" onchange="">
+						<option value="0">Seleccione categoria</option>
+						<option value="1">Computadoras</option>
+						<option value="2">Autos</option>
+					</select>
+
+                      <input type="submit" id="Buscar" value="Buscar" />
                       </form>
 				<div>
 				
+				
+
+				<nav>
+					<ul>
+						<li class="active"><a href="#" title="" >HOME</a></li>
+						<li><a href="#" title="">PUBLICA GRATIS</a></li>
+						<li><a href="#" title="">NOSOTROS</a></li>
+						<li><a href="#" title="">CONTACTO</a></li>
+					</ul>
+				</nav>
+				
 			</div><!-- fin wrap-->
 		</header>
-		<nav>
-					<ul>
-						<li><a href="#" title="">HOME</a></li>
-						<li><a href="#" title="">CONTACTO</a></li>
-						<li><a href="#" title="">PORTAFOLIO</a></li>
-						<li><a href="#" title="">HOME</a></li>
-					</ul>
-		</nav>
+		

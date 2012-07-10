@@ -51,9 +51,50 @@ header {
 	
 }
 
+
+
+#buscador{
+	width:75%;
+	float:right;
+	padding-top:20px;
+}
+
+#buscador input{
+	width:40%;
+	color:#1E90FF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+
+	transition: all 0.75s ease-in-out;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    border:1px solid rgba(0,0,0, 0.2);
+    padding: 3px;
+
+}
+
+#buscador input:focus {
+    box-shadow: 0 0 10px blue;
+    -webkit-box-shadow: 0 0 10px blue;
+    -moz-box-shadow: 0 0 10px blue;
+    
+    
+}
+
+#buscador label{
+	color:blue;
+}
+
+#buscador #Buscar
+{
+	width:20%;
+	float:right;
+}
+
 nav{
 	padding-top:20px;
-	float:left;
+	float:right;
 	width:75%;
 	
 }
@@ -61,6 +102,7 @@ nav{
 nav ul {
 	padding:0;
 	font-size:0;
+	background: rgba(0,0,0,.3) ;
 }
 
 nav ul li {
@@ -68,11 +110,24 @@ nav ul li {
 	display:inline-block;
 	font-size:16px;
 	padding:10px;
-	width:15%;
+	width:20%;
 	vertical-align:top;
+	height:30px;
 
 }
 
+nav ul li a{
+	color: white;
+	text-decoration:none;
+}
 
+nav ul li.active{
+	background: rgba(0,0,0,.1) ;
 
+	
+}
 
+nav ul li.active , nav ul li:hover{
+	background: rgba(0,0,0,.1) ;
+	
+}
