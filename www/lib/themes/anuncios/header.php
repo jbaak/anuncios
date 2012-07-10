@@ -31,13 +31,21 @@
 					<a herf="#">Anuncios Clasificados</a>
 				</div>
 
-				<nav>
+				<div id="buscador">
+					<?php $search_text = "Que estas buscando?"; ?>
+					<form method="pos" id="buscador" action="">
+                      <input type="text" value="<?php echo $search_text; ?>" name="s" id="s" onblur="if (this.value == '') {this.value = '<?php echo $search_text; ?>';}" onfocus="if (this.value == '<?php echo $search_text; ?>') {this.value = '';}" />
+                      <input type="submit" id="searchsubmit" value="Buscar" />
+                      </form>
+				<div>
+				
+			</div><!-- fin wrap-->
+		</header>
+		<nav>
 					<ul>
 						<li><a href="#" title="">HOME</a></li>
 						<li><a href="#" title="">CONTACTO</a></li>
 						<li><a href="#" title="">PORTAFOLIO</a></li>
 						<li><a href="#" title="">HOME</a></li>
 					</ul>
-				</nav>
-			</div><!-- fin wrap-->
-		</header>
+		</nav>
