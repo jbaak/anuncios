@@ -4,8 +4,9 @@
 	}
 	
 ?>
-<section>
-	<div id="content">
-	<?php $this->load(isset($view) ? $view : NULL, TRUE); ?>
-	</div>
-</section>
+<div class="wrap"><!-- inicia wrap-->
+	<section>
+		<div id="content">
+		<?php $this->load(isset($view) ? $view : NULL, TRUE); ?>
+		</div>
+	</section>

@@ -8,9 +8,9 @@
 		
 
 		<footer>
-			<div class="wrap">
+			
 				<p>&copy; Desarrollado por JesusBaak - 2012 - Powered By <a href="http://www.milkzoft.com" title="MilkZoft">ZanPHP Framework</a></p>
-			</div>
+			
 		</footer>
 	  
 		
