@@ -12,6 +12,8 @@ body{
 .wrap {
 	max-width:80%;
 	margin:0 auto;
+	display:inline-block;
+	
 }	
 
 header {
@@ -56,7 +58,7 @@ header {
 #buscador{
 	width:75%;
 	float:right;
-	padding-top:20px;
+	padding-top:10px;
 }
 
 #buscador input{
@@ -140,7 +142,7 @@ nav ul li.active , nav ul li:hover{
 }
 
 footer {
-	width:80%;
+	max-width:80%;
 	margin:0 auto;
 	padding-top:10px;
 	padding-bottom:10px;
@@ -172,4 +174,19 @@ footer {
 		box-shadow: 1px 1px 8px #292929;
 		
 	
+}
+
+section {
+	width:75%;
+	float:left;
+	display:inline-block;
+}
+
+#content{
+	
+}
+
+aside{
+	float:right;
+	width:25%;
 }
