@@ -27,7 +27,7 @@ $ZP["autoRender"] = TRUE;
 /**
  * Applications
  */
-$ZP["defaultApplication"] = "default";
+$ZP["defaultApplication"] = "anuncios";
 
 /**
  * Languages
