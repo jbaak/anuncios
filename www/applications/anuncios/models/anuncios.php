@@ -14,12 +14,27 @@ class Anuncios_Model extends ZP_Model {
 		$this->helpers();
 	
 		$this->table = "categorias";
+
+		
+		
 	}
 
-	public function contact($id) {
-		$data = $this->Db->findAll($this->table);
-
+	public function getCategorias() {
+		#$data = $this->Db->query("select * from zan_subcategorias JOIN zan_categorias ON zan_categorias.id_categoria = zan_subcategorias.id_categoria ");
+		$data= $this->Db->findAll($this->table);
 		return $data;
+	}
+
+	public function getsubcategorias($id)
+	{
+		$this->Db->select("*");
+ 		$this->Db->from("subcategorias");
+		$this->Db->where("id_categoria = $id");
+ 
+ 		//SELECT Username FROM zan_users WHERE Email = 'contact@milkzoft.com'
+ 		$data = $this->Db->get();
+
+ 		return $data;
 	}
 	
 }

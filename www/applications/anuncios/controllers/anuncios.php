@@ -23,16 +23,26 @@ class Anuncios_Controller extends ZP_Controller {
 		$this->render("content", $vars);
 	}
 
-	public function test($param1 = "Hola", $param2 = "Adios") {
-		print "New dispatcher it's works fine: $param1, $param2";
+	public function categorias() {
+		$data = $this->Anuncios_Model->getCategorias();
+		#____($data);
+		if($data)
+		{
+			$vars["cat"]= $data;
+			$vars["view"]= $this->view("categorias", TRUE);
+			$this->render("content", $vars);
+		}else
+		{
+			$this->render("error404");
+		}
 	}
 
-	public function show($message) {
-		$vars["message"] = $message;
-		$vars["view"]	 = $this->view("show", TRUE);
+	public function subcategorias($id) {
 		
-		$this->render("content", $vars);
-		#$this->view("show", $vars);
+		$data=$this->Anuncios_Model->getsubcategorias($id);
+		#____($data);
+		return $data;
+		
 	}
 
 }
