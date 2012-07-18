@@ -20,8 +20,8 @@ class Anuncios_Model extends ZP_Model {
 	}
 
 	public function getCategorias() {
-		#$data = $this->Db->query("select * from zan_subcategorias JOIN zan_categorias ON zan_categorias.id_categoria = zan_subcategorias.id_categoria ");
-		$data= $this->Db->findAll($this->table);
+		$data = $this->Db->query("select * from zan_subcategorias JOIN zan_categorias ON zan_categorias.id_categoria = zan_subcategorias.id_categoria ");
+		#$data= $this->Db->findAll($this->table);
 		#____($data);
 		return $data;
 	}

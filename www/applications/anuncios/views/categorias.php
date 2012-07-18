@@ -6,21 +6,26 @@ if(is_array($cat))
 {
 	 for($j=0; $j<sizeof($cat); $j++)
 	{
+		
+
 	?>
 		
-		<h2><?php echo $cat[$j]["categoria"]?></h2>
+		<h2><?php echo $cat[$j]["categoria"];?></h2>
 
 		<?php 
 		#$sub =  $this->execute("Anuncios_Controller", "subcategorias",array($cat[$j]["id_categoria"]));
 		#____($sub);
-			#for($i=0; $i<sizeof($sub); $i++)
-			#{
+		#	for($i=0; $i<sizeof($sub); $i++)
+		#	{
 				?>
-					<li><?php # echo $sub[$i]["subcategoria"]?></li><br>
+					<?php # echo $sub[$i]["subcategoria"]?>
 					
 				<?php
 			#}
-		 
+
+		 ?>
+		 <h3><?php echo $cat[$j]["subcategoria"]?></h3>
+		 <?php
 	}
 
 }
